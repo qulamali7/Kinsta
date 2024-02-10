@@ -1,0 +1,38 @@
+.process_card{
+    width: 32%;
+    border-radius: 10px;
+    background-color: #f9f5f3;
+    figure{
+        border-radius: 10px;
+        img{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 100%;
+        }
+    }
+    &_text{
+        padding: 32px;
+        h3{
+            font-size: 20px;
+            line-height: 22px;
+            margin-bottom: 16px;
+            color: #1c1819;
+            font-weight: 500;
+        }
+        p{
+            line-height: 28px;
+            font-size: 16px;
+            letter-spacing: normal;
+            color: #4c4243;
+            margin-bottom: 28px;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .process_card{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}

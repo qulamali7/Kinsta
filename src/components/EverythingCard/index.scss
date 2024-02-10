@@ -1,0 +1,33 @@
+.everything_card{
+    background-color: #F9F5F3;
+    width: 32%;
+    border-radius: 10px;
+    &_content{
+        padding: 32px;
+        &_img{
+            width: 128px;
+            margin: auto;
+            margin-bottom: 16px;
+            img{
+                width: 100%;
+            }
+        }
+        h3{
+            text-align: center;
+            color: #1c1819;
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+        p{
+            text-align: center;
+            color: #4c4243;
+            font-size: 18px;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .everything_card{
+        width: 80%;
+    }
+}

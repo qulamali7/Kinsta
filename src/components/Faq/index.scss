@@ -1,0 +1,80 @@
+#faq{
+    padding: 80px 0px;
+    .faq_container{
+        max-width: 1400px;
+        margin: auto;
+        .faq_content{
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            background-color: #F9F5F3;
+            .faq_left{
+                width: 40%;
+                h2{
+                    font-size: 48px;
+                    color: #1c1819;
+                    margin-bottom: 20px;
+                }
+                p{
+                    margin-bottom: 30px;
+                    color: #4c4243;
+                }
+                a{
+                    padding: 12px 19px;
+                    border: 1px solid #1c1819;
+                    border-radius: 10px;
+                    text-decoration: none;
+                    color: #4c4243;
+                }
+            }
+            .faq_right{
+                width: 60%;
+                .accordion{
+                    .accordion-item{
+                        background-color: #eaddd5;
+                        margin-bottom: 20px;
+                        .accordion-header{
+                            button{
+                                background-color: #eaddd5;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+    #faq{
+        .faq_container{
+            .faq_content{
+                flex-direction: column;
+                .faq_left{
+                    width: 80%;
+                    margin-bottom: 20px;
+                    h2{
+                        font-size: 48px;
+                        color: #1c1819;
+                        margin-bottom: 20px;
+                    }
+                    p{
+                        margin-bottom: 30px;
+                        color: #4c4243;
+                    }
+                    a{
+                        padding: 12px 19px;
+                        border: 1px solid #1c1819;
+                        border-radius: 10px;
+                        text-decoration: none;
+                        color: #4c4243;
+                    }
+                }
+                .faq_right{
+                    width: 80%;
+                }
+            }
+        }
+    }
+}

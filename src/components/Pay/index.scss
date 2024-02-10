@@ -1,0 +1,43 @@
+#pay {
+    padding: 80px 0px;
+    .pay_container {
+        max-width: 1400px;
+        margin: auto;
+
+        .pay_content {
+            .pay_title {
+                text-align: center;
+                margin-bottom: 48px;
+
+                &_main {
+                    font-size: 48px;
+                    color: #1c1819;
+                    margin-bottom: 10px;
+                }
+
+                &_text {
+                    font-size: 18px;
+                    color: #4c4243;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    #pay {
+        .pay_container {
+            .pay_content {
+                .pay_title {
+                    &_main {
+                        font-size: 40px;
+                    }
+    
+                    &_text {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

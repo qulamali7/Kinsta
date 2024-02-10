@@ -1,0 +1,53 @@
+#trial {
+    padding: 80px 0px;
+
+    .trial_container {
+        max-width: 1400px;
+        margin: auto;
+
+        .trial_content {
+            background-color: #2A0E0B;
+            border-radius: 10px;
+            .trial_bck {
+                background-image: url("https://kinsta.com/wp-content/themes/kinsta/images/components/service-ctas/app-large.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                border-radius: 10px;
+                gap: 32px;
+                padding: 40px 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                h2{
+                    font-size: 40px;
+                    font-weight: 400;
+                    color: #ffff;
+                }
+                a{
+                    padding: 12px 19px;
+                    background-color: #F2E9E3;
+                    color: #0e0d0e;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    #trial {
+        .trial_container {
+            .trial_content {
+                margin: 0px 10px;
+                .trial_bck {
+                    flex-direction: column;
+                    h2{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

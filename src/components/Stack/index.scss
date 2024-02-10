@@ -1,0 +1,45 @@
+#stack{
+    .stack_container{
+        max-width: 1400px;
+        margin: auto;
+        .stack_content{
+            .stack_title{
+                text-align: center;
+                margin-bottom: 48px;
+                &_main{
+                    font-size: 48px;
+                    color: #1c1819;
+                    margin-bottom: 10px;
+                }
+                &_text{
+                    font-size: 18px;
+                color: #4c4243;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    #stack{
+        .stack_container{
+            .stack_content{
+                .stack_title{
+                    text-align: center;
+                    margin-bottom: 48px;
+                    &_main{
+                        font-size: 32px;
+                        width: 80%;
+                        margin: auto;
+                        margin-bottom: 10px;
+                    }
+                    &_text{
+                        font-size: 16px;
+                        width: 80%;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}

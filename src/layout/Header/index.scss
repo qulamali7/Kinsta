@@ -1,0 +1,90 @@
+header{
+    position: fixed;
+    width: 100%;
+    margin: 20px 0px;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    .header_container{
+        max-width: 1400px;
+        margin: auto;
+        background-color: #181516;
+        border-radius: 10px;
+        .header_area{
+            padding: 10px 20px;
+            .header_content{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .header_title{
+                    color: white;
+                    font-weight: 800;
+                    font-size: 22px;
+                }
+                nav{
+                    margin-top: 15px;
+                    ul{
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                        li{
+                          
+                            a{
+                                color: #f9f5f3;
+                            }
+
+                        }
+                    }
+                }
+                .header_login{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    .header_search{
+                        i{
+                            color: #f9f5f3;
+                        }
+                    }
+                    .login_link{
+                        padding: 12px 19px;
+                        color: #f9f5f3;
+                    }
+                    .login_sign{
+                        padding: 12px 19px;
+                        background-color: #f9f5f3;
+                        color: #181516;
+                        border-radius: 10px;
+                    }
+                }
+                .fa-bars{
+                    color: #f9f5f3;
+                    display: none;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    header{
+        .header_container{
+            margin: auto 10px;
+            .header_area{
+                .header_content{
+                    .header_title{
+                    }
+                    nav{
+                        display: none;
+                    }
+                    .header_login{
+                        display: none;
+                    }
+                    .fa-bars{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+#built {
+    padding: 80px 0px;
+
+    .built_container {
+        max-width: 1400px;
+        margin: auto;
+
+        .built_content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .built_left {
+                width: 50%;
+
+                h3 {
+                    font-size: 40px;
+                    margin-bottom: 40px;
+                }
+
+                .built_checklist {
+                    margin-bottom: 25px;
+
+                    &_element {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        margin-bottom: 16px;
+                        font-size: 18px;
+                        color: #4c4243;
+
+                        img {
+                            mask-image: url("https://kinsta.com/wp-content/themes/kinsta/dist/sprite.svg?ver=c2f99eac23ff19ca46f99cf84d69719a26441fe2#check-circle-usage");
+                            width: 16px;
+                            height: 16px;
+                            background-color: #FF5718;
+                        }
+                    }
+                }
+
+                .built_btn {
+                    padding: 12px 19px;
+                    background-color: #f5ede9;
+                    color: #1c1819;
+                    font-size: 18px;
+                    border-radius: 8px;
+                }
+            }
+
+            .built_right {
+                width: 50%;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+    #built {
+        .built_container {
+            .built_content {
+                flex-direction: column-reverse;
+
+                .built_left {
+                    width: 80%;
+                }
+
+                .built_right {
+                    width: 80%;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

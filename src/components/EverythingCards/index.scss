@@ -1,0 +1,12 @@
+.everything_cards{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+    .everything_cards{
+        flex-direction: column;
+    }
+}
