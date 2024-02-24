@@ -1,86 +1,163 @@
-header{
+header {
     position: fixed;
     width: 100%;
     margin: 20px 0px;
     top: 0;
     left: 0;
     z-index: 5;
-    .header_container{
+
+    .header_container {
         max-width: 1400px;
         margin: auto;
         background-color: #181516;
         border-radius: 10px;
-        .header_area{
+
+        .header_area {
             padding: 10px 20px;
-            .header_content{
+
+            .header_content {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                .header_title{
+
+                .header_title {
                     color: white;
                     font-weight: 800;
                     font-size: 22px;
                 }
-                nav{
+
+                nav {
                     margin-top: 15px;
-                    ul{
+
+                    ul {
                         display: flex;
-                        align-items: center;
+                        // align-items: center;
                         gap: 20px;
-                        li{
-                          
-                            a{
+
+                        li {
+                            position: relative;
+
+                            a {
                                 color: #f9f5f3;
+                            }
+
+                            &:hover .megamenu__dropdown {
+                                transition: 0.5s all ease;
+                                top: 2px;
+                                opacity: 1;
+                                visibility: visible;
+                            }
+
+                            .megamenu__dropdown {
+                                width: 1000px;
+                                margin-top: 20px;
+                                position: absolute;
+                                opacity: 0;
+                                visibility: hidden;
+                                top:10px;
+                                left: -300px;
+                                background-color: #181516;
+                                border-bottom-left-radius: 10px;
+                                border-bottom-right-radius: 10px;
+
+                                &__inner {
+                                    .megamenu__dropdown__container {
+                                        padding: 30px 50px;
+                                        .megamenu__dropdown__columns {
+                                            display: flex;
+                                            align-items: flex-start;
+                                            justify-content: space-between;
+                                            gap: 20px;
+
+                                            .megamenu__dropdown__column {
+                                                &__title {
+                                                    color: white;
+                                                    text-align: center;
+                                                    font-size: 22px;
+                                                    margin-bottom: 10px;
+                                                }
+
+                                                &__list {
+                                                    display: flex;
+                                                    align-items: flex-start;
+                                                    flex-direction: column;
+
+                                                    .megamenu__dropdown__li {
+                                                        margin-bottom: 8px;
+
+                                                        a {
+                                                            font-size: 16px;
+                                                            color: #f9f5f3;
+                                                            display: flex;
+                                                            align-items: center;
+                                                            gap: 20px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                             }
 
                         }
                     }
                 }
-                .header_login{
+
+                .header_login {
                     display: flex;
                     align-items: center;
                     gap: 20px;
-                    .header_search{
-                        i{
+
+                    .header_search {
+                        i {
                             color: #f9f5f3;
                         }
                     }
-                    .login_link{
+
+                    .login_link {
                         padding: 12px 19px;
                         color: #f9f5f3;
                     }
-                    .login_sign{
+
+                    .login_sign {
                         padding: 12px 19px;
                         background-color: #f9f5f3;
                         color: #181516;
                         border-radius: 10px;
                     }
                 }
-                .fa-bars{
+
+                .fa-bars {
                     color: #f9f5f3;
                     display: none;
                     font-size: 22px;
                 }
             }
+
+
         }
     }
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-    header{
-        .header_container{
+    header {
+        .header_container {
             margin: auto 10px;
-            .header_area{
-                .header_content{
-                    .header_title{
-                    }
-                    nav{
+
+            .header_area {
+                .header_content {
+                    .header_title {}
+
+                    nav {
                         display: none;
                     }
-                    .header_login{
+
+                    .header_login {
                         display: none;
                     }
-                    .fa-bars{
+
+                    .fa-bars {
                         display: block;
                     }
                 }
