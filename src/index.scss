@@ -1,4 +1,8 @@
-*{
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
     font-family: 'Pathway Extreme', sans-serif;
     margin: 0px;
     padding: 0px;
@@ -6,9 +10,11 @@
     text-decoration: none !important;
     box-sizing: border-box;
 }
-img{
+
+img {
     max-width: 100%;
 }
-body{
+
+body {
     background-color: #F5EDE9 !important;
 }

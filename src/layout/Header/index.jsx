@@ -33,7 +33,7 @@ const Header = () => {
                                                                         <span className="megamenu__dropdown__item__title">
                                                                             Web Application Hosting            </span>
                                                                     </Link>
-                                                                </li>
+                                                              </li>
                                                                 <li className="megamenu__dropdown__li">
                                                                     <Link className="megamenu__dropdown__item ">
                                                                         <img className="megamenu__dropdown__item__icon" width="32" height="32" aria-hidden="true" src="https://kinsta.com/wp-content/themes/kinsta/images/components/megamenu/icon-db.png" />
@@ -348,7 +348,7 @@ const Header = () => {
                                 <div className='header_search'>
                                     <i className="fa-solid fa-magnifying-glass"></i>
                                 </div>
-                                <Link className='login_link'>Login</Link>
+                                <Link to={"/login"} className='login_link'>Login</Link>
                                 <Link className='login_sign'>Sign Up</Link>
                             </div>
                             <i className="fa-solid fa-bars"></i>
